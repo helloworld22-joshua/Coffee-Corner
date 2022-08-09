@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A coffee shop in Germany's with the finest coffee and other delicate beverages. Owner: Joshua Albrecht; Coffee Prices: Small 2€, Medium 4€, Large 6€">
+    <meta name="theme-color" content="#000"/>
+    <title>Coffee Corner</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="title" href="index.html">
+            <img src="logo.png" alt="Logo" draggable="false">
+            <h1>Coffee Corner
+                <h4> ™</h4>
+            </h1>
+        </a>
+        <ul class="links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#products">Products</a>
+            </li>
+            <li>
+                <a href="#location">Location</a>
+            </li>
+            <li>
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="navmenu">
+        <div class="navbox">
+            <ul class="links">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+                <li>
+                    <a href="#location">Location</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <button class="navbutton" aria-label="Navigation" onclick="toggleMenu()">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div>
+        </button>
+    </nav>
+    <header>
+        <div class="count"></div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellat? Ut explicabo natus blanditiis praesentium quod accusantium consectetur distinctio necessitatibus voluptatibus voluptates. Voluptate ratione, in tempora incidunt sequi necessitatibus aperiam.</p>
+        </section>
+        <section id="products">
+            <h2>Products</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellat? Ut explicabo natus blanditiis praesentium quod accusantium consectetur distinctio necessitatibus voluptatibus voluptates. Voluptate ratione, in tempora incidunt sequi necessitatibus aperiam.</p>
+        </section>
+        <section id="contacts">
+            <h2>Contacts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellat? Ut explicabo natus blanditiis praesentium quod accusantium consectetur distinctio necessitatibus voluptatibus voluptates. Voluptate ratione, in tempora incidunt sequi necessitatibus aperiam.</p>
+        </section>
+        <section id="location">
+            <h2>Location</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repellat? Ut explicabo natus blanditiis praesentium quod accusantium consectetur distinctio necessitatibus voluptatibus voluptates. Voluptate ratione, in tempora incidunt sequi necessitatibus aperiam.</p>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe src="https://maps.google.com/maps?q=Bielefeld%20Hbf&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 400px;"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © coffeecorner.com. All Rights Reserved. <br> Any redistribution will resort in legal action!</p>
+        <a href="https://twitter.com/">
+            <img src="twitter.png" alt="Twitter">
+        </a>
+        <a href="https://facebook.com/">
+            <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://instagram.com/">
+            <img src="instagram.png" alt="Instagram">
+        </a>
+    </footer>
+</body>
+</html>
