@@ -1,6 +1,4 @@
-$(window).on("load", () => {
-    $(".count").html("We served " + Math.floor(Math.random() * 100000) + " customers already!");    // Example number
-});
+$(".count").html("We served " + Math.floor(Math.random() * 100000) + " customers already!");    // Example number
 
 $(window).scroll(() => { 
     document.documentElement.scrollTop ?
