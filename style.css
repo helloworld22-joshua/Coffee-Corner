@@ -2,7 +2,8 @@
     --pri: #884637;
     --sec: #f2f1e7;
     --bac: #000;
-    --bac2: #f2f1e780;
+    --bac2: #00000080;
+    --bac3: #f2f1e780;
 }
 
 ::selection {
@@ -175,30 +176,34 @@ section {
 }
 
 #about {
-    background-color: var(--bac2);
+    background-color: var(--bac3);
     backdrop-filter: blur(10px);
     color: var(--bac);
 }
 
 #products {
     background-color: var(--bac);
+    backdrop-filter: blur(10px);
 }
 
 #location {
-    background-color: var(--pri);
+    background-color: var(--bac2);
+    backdrop-filter: blur(10px);
 }
 
 #location iframe {
     display: block;
+    width: min(100%, 500px);
+    height: 50vh;
     margin: auto;
     border-radius: 10px;
 }
 
 footer {
-    display: flex;
+    display: block;
     padding: 20px;
-    justify-content: space-around;
-    align-items: center;
+    overflow: hidden;
+    text-align: center;
     background-color: var(--bac);
     box-shadow: 0 25px 20px 50px var(--bac);
 }
@@ -210,6 +215,11 @@ footer a {
 footer img {
     height: 50px;
     margin: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(2);
 }
 
 @media only screen and (max-width: 845px) {     /*Not dynamic*/
